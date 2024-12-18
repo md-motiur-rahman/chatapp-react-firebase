@@ -1,0 +1,34 @@
+.userinfo{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        span{
+            font-size: max(1.5vw, 14px);
+            font-weight: 600;
+        }
+    }
+
+    .icons{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        color: rgb(83, 83, 83);
+
+        i:hover{
+            color: black;
+        }
+    }
+}

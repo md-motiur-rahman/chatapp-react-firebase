@@ -1,0 +1,126 @@
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    padding: 15px;
+    border-bottom: 2px solid antiquewhite;
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h2 {
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      font-style: italic;
+      color: gray;
+    }
+  }
+
+  .info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .option {
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        i {
+          font-size: 18px;
+          color: rgb(83, 83, 83);
+          padding: 10px;
+
+          &:hover {
+            font-size: 18px;
+            background-color: #f9ca8d;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .photos {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-height: 300px;
+        overflow-y: scroll;
+
+        .photodetail {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .photoitem {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+            span {
+              color: gray;
+              font-size: 15px;
+            }
+          }
+
+          i {
+            font-size: 18px;
+            color: rgb(83, 83, 83);
+            padding: 10px;
+
+            &:hover {
+              font-size: 18px;
+              background-color: #f9ca8d;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    button{
+        padding: 10px;
+        border: none;
+        background-color: #f9ca8d;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 700;
+
+        &:hover{
+            background-color: #ff3c00;
+            color: white;
+        }
+
+        &.logout{
+            background-color: transparent;
+            border: 2px solid #f9ca8d;
+            color: black;
+
+            &:hover{
+                background-color: #f9ca8d;
+                color: black;
+            }
+        }
+
+        
+    }
+  }
+}
